@@ -1,0 +1,42 @@
+int motorpin=3;
+int motorpin2=6;
+int ontime=2500;
+int offtime=1000;
+
+void setup()
+{
+  pinMode(3, OUTPUT);
+}
+
+void loop()
+{
+  analogWrite(motorpin, 100);
+  delay(ontime);
+  digitalWrite(motorpin, LOW);
+  delay(offtime);
+  
+  analogWrite(motorpin, 190);
+  delay(ontime);
+  digitalWrite(motorpin, LOW);
+  delay(offtime); 
+  
+  analogWrite(motorpin, 255);
+  delay(ontime);
+  digitalWrite(motorpin, LOW);
+  delay(offtime); 
+  
+  analogWrite(motorpin2, 100);
+  delay(ontime);
+  digitalWrite(motorpin2, LOW);
+  delay(offtime);
+  
+  analogWrite(motorpin2, 190);
+  delay(ontime);
+  digitalWrite(motorpin2, LOW);
+  delay(offtime); 
+  
+  analogWrite(motorpin2, 255);
+  delay(ontime);
+  digitalWrite(motorpin2, LOW);
+  delay(offtime); 
+}
